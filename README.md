@@ -1,0 +1,7 @@
+# Project Reflection
+To organize my project efficiently, I started by creating a new branch called `feature/header`. This allowed me to develop the header section of my website without affecting the main branch.  
+I then created a HTML file with basic structure and then added and committed changes to the `index.html` file in this branch. Afterward, I created a `feature/footer` branch where I worked on the footer section and committed those changes as well.  
+Next, I switched back to the `feature/header` branch and modified the footer content bycreating a footer tag to intentionally simulate a merge conflict. After completing those edits, I merged the `feature/footer` branch into `main` .   
+Then, when I attempted to merge the `feature/header` branch into `main`, a conflict occurred due to overlapping changes in the `index.html` file. I manually edited `index.html` to resolve the merge conflict. I confirmed everything was clean using `git status`, and then pushed the updated main branch to GitHub.  
+ I created a new branch named `review/main` from `main` and pushed it to GitHub. I used this branch to open a pull request, comparing changes in `main` with `review/main`. Since the branches were initially the same, I made a small edit in `main` to trigger a difference and submitted the pull request.  
+ This entire experience emphasized the value of branching for separate feature development, the importance of resolving merge conflicts efficiently, and how pull requests serve as a crucial step for code review and collaboration.
